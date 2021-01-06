@@ -1,0 +1,84 @@
+.content {
+	padding-top: 20px;
+}
+
+.keeper {
+	width: 60%;
+	margin: auto;
+}
+
+.accordion > div > span {
+	display: block;
+	width: 100%;
+	cursor: pointer;
+	padding: 15px;
+	border-bottom: 1px solid #ccc;
+}
+
+.accordion > div > span:after {
+	content: "\002b";
+	float: right;
+}
+
+.accordion > div.show > span:after {
+	content: "\2212";
+}
+
+.accordion > div:first-child > span {
+	border-radius: 10px 10px 0 0;
+}
+
+.accordion > div:last-child > span {
+	border-radius: 0 0 10px 10px;
+	border-bottom: 0;
+}
+
+.accordion > div.show:last-child > span {
+	border-radius: 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.accordion > div.show:last-child > div {
+	border-bottom: 1px solid #ccc;
+	border-radius: 0 0 10px 10px;
+}
+
+.accordion > div > div {
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	max-height: 0;
+	overflow: hidden;
+	transition: all 0.5s;
+	padding: 0 15px;
+}
+
+.accordion > div.show > div {
+	padding: 15px;
+	border-bottom: 1px solid #ccc;
+}
+
+.row {
+	width: 100%;
+	justify-content: center;
+  	align-items: center;
+  	padding: 10px;
+}
+
+.theme-btn {
+	width: 5%;
+	margin: 2px;
+	border-radius: 10px;
+	outline: none;
+	line-height: 30px;
+	padding: 10px;
+	cursor: pointer;
+	border: 2px solid white;
+}
+
+.theme-btn:hover {
+	border: 2px solid black;
+}
+
+.theme-btn:focus { 
+	outline: none; 
+}

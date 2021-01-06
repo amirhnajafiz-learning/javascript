@@ -1,0 +1,55 @@
+.b_gray {
+	background-color: #ccc;
+}
+
+.b_white {
+	background-color: #fff;
+}
+
+.b_black {
+	background-color: #000;
+}
+
+.b_blue {
+	background-color: #0066ff;
+}
+
+.b_green {
+	background-color: #009933;
+}
+
+.b_orange {
+	background-color: #ff8533;
+}
+
+.b_purpule {
+	background-color: #4d004d;
+}
+
+.t_gray {
+	color: #ccc;
+}
+
+.t_white {
+	color: #fff;
+}
+
+.t_black {
+	color: #000;
+}
+
+.t_blue {
+	color: #0066ff;
+}
+
+.t_green {
+	color: #009933;
+}
+
+.t_orange {
+	color: #ff8533;
+}
+
+.t_purpule {
+	color: #4d004d;
+}
