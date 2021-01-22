@@ -1,3 +1,4 @@
+// Using query selector to create a popup
 let popupBtns = document.querySelectorAll("button.popup-btn");
 
 if (popupBtns) 
