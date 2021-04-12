@@ -1,3 +1,3 @@
 # JavaScriptBullshits
 
-My java script bull shits.
+My javascript learning base.
