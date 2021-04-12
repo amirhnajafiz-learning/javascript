@@ -31,3 +31,6 @@ console.log(field)
 field = "Data Analize";
 
 console.log(field);
+
+// The function that gets the type of a variable
+console.log(typeof(field))

@@ -43,7 +43,7 @@ console.log(data.indexOf(23)); // Not found => -1
 
 // Using more arrow functions
 console.log(data.find((n) => n > 10)); // First greater than 10
-console.log(data.filter((n) => n % 2 == 0); // Get all the evens
+console.log(data.filter((n) => n % 2 == 0)); // Get all the evens
 
 
 // arrays in arrays

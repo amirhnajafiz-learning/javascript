@@ -29,4 +29,4 @@ function decode (number, base=2)
 	return number ** new_base;
 }
 
-console.log(decode(encode(10)); // 10
+console.log(decode(encode(10))); // 10
