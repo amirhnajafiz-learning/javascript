@@ -11,4 +11,8 @@ class Book
     {
         return {'title': this.title, 'author': this.author, 'publishDate': this.publishDate, 'rate': this.rate};
     }
+    equal(book)
+    {
+        return book.title == this.title && book.author == this.author;
+    }
 }
