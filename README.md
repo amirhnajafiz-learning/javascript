@@ -1,3 +1,3 @@
-# JavaScriptBullshits
+# JavaScript Base
 
-My javascript learning base.
+A collection of javascript codes and projects that I had.
