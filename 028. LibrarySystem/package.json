@@ -1,0 +1,7 @@
+{
+  "name": "028. LibrarySystem",
+  "version": "1.0.0",
+  "dependencies": {
+    "faker": "^5.5.3"
+  }
+}
