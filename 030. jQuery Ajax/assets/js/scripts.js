@@ -13,9 +13,16 @@ function API() {
     $.ajax(settings).done(function (response) {
         console.log(response);
         let string = "";
-        response.tracks.hits.forEach(hits => {
-            string += "<div class='row'>" + JSON.stringify(hits, null, 4) + "</div>";
+        let result = "";
+        response.tracks.hits.forEach(track => {
+            string += "<div class='row'>" + JSON.stringify(track, null, 4) + "</div>";
+            let title = "<h3>" + track.title + "</h3>";
+            let subtitle = "<small>" + track.subtitle + "</small>";
+            //let img = "<img src='" + track.share.image + "' alt='song photo' />";
+            let row = "<div class='row'>" + title + subtitle + "</div>";
+            result += row;
         });
         document.getElementById('app').innerHTML = string;
+        document.getElementById('res').innerHTML = result;
     });
 }
