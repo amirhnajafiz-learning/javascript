@@ -1,66 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Metas -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <!-- Metas -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
-    <link href="assets/css/styles.css" rel="stylesheet" />
-    <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-            crossorigin="anonymous"
-    />
+        <!-- CSS -->
+        <link href="assets/css/styles.css" rel="stylesheet" />
+        <link
+                rel="stylesheet"
+                href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+                integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+                crossorigin="anonymous"
+        />
 
-    <title>Simple ajax</title>
+        <title>Simple ajax</title>
 
-</head>
-<body>
-    <div class="container">
-        <button onclick="useAPI()" class="btn">
-            Click
-        </button>
-        <button id="cancel" onclick="cancel()" class="btn second" style="display: none;">
-            Reset
-        </button>
-        <div id="app" style="display: none">
-            <pre id="content">
+    </head>
+    <body>
+        <div class="container">
+            <button onclick="useAPI()" class="btn">
+                Click
+            </button>
+            <button id="cancel" onclick="cancel()" class="btn second" style="display: none;">
+                Reset
+            </button>
+            <div id="app" style="display: none">
+                <pre id="content">
 
-            </pre>
-            <img src="" id="pic" alt="User picture" />
+                </pre>
+                <img src="" id="pic" alt="User picture" />
+            </div>
         </div>
-    </div>
-<script
-        src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-        crossorigin="anonymous"
-></script>
 
-<script>
-    function cancel() {
-        document.getElementById('app').style.display = "none";
-        document.getElementById('content').innerHTML = null;
-        document.getElementById('cancel').style.display = "none";
-    }
-
-    function useAPI() {
-        $.ajax({
-            url: 'https://randomuser.me/api/',
-            dataType: 'json',
-            success: function(data) {
-                document.getElementById('app').style.display = "block";
-                document.getElementById('content').innerHTML = JSON.stringify(data, null, 4);
-                document.getElementById('cancel').style.display = "inline-block";
-                let img = document.getElementById('pic');
-                img.src = data.results[0].picture.medium;
-            },
-            error: function (response) {
-                alert('Error');
-            }
-        });
-    }
-</script>
-</body>
+        <!-- External scripts -->
+        <script
+                src="https://code.jquery.com/jquery-3.6.0.min.js"
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                crossorigin="anonymous"
+        ></script>
+        <script src="assets/js/scripts.js"></script>
+    </body>
 </html>
